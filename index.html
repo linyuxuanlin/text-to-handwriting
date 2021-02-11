@@ -120,24 +120,28 @@
             src="images/moon.svg"
         /></span>
       </button>
-      <h1>Text to Handwriting</h1>
+      <h1>手写体文档照片生成</h1>
       <section style="font-size: 1rem; padding: 20px 0px;">
         <div>
-          Hey everyone! Thank you for supporting Text to Handwriting 🎉
+          Hello there~ <br /><br />
+          也许你懒得抄写千篇一律的寒假作业，也许某个奇怪的老师要求必须手抄，亦或许某场考试只能携带手抄的资料，那么这个工具可以帮到你。
           <ul class="info-ul">
             <li>
-              If you want to use additional fonts, you can check out comments in
-              <a
-                href="https://github.com/saurabhdaware/text-to-handwriting/issues/78"
-                >text-to-handwriting issue#78</a
-              >. After downloading the .ttf or .otf file of font, you can import
-              it with "Upload your Handwriting Font" button.
+              可直接在页面上的纸张里编辑内容
             </li>
             <li>
-              I made this tool for fun and didn't expect the response I'm
-              getting right now. Since this tool is not my full-time job, I may
-              be late responding for the feature requests and emails regarding
-              this tool.
+              如果你想添加自己的字体，可以去网上下载（比如
+              <a href="https://www.fonts.net.cn/fonts-zh/tag-shouxie2-1.html"
+                >字体天下</a
+              >
+              ），解压上传即可。
+            </li>
+            <li>
+              本网页由项目
+              <a href="https://github.com/saurabhdaware/text-to-handwriting"
+                >saurabhdaware/text-to-handwriting</a
+              >
+              改编而来，主要是翻译 + 添加多个中文手写体。开源协议遵循原项目。
             </li>
           </ul>
           <br />
@@ -149,8 +153,8 @@
           <div class="display-flex output-grid responsive-flex">
             <div class="flex-1 page-container-super">
               <div>
-                <h2 style="margin-top: 0px;">Input</h2>
-                <label class="block" for="note">Type/Paste text here</label>
+                <h2 style="margin-top: 0px;">编辑</h2>
+                <label class="block" for="note">可直接将内容粘贴进来↓</label>
               </div>
 
               <div class="flex-1 page-container">
@@ -159,24 +163,10 @@
                   <div class="display-flex left-margin-and-content">
                     <div contenteditable="true" class="left-margin"></div>
                     <div class="paper-content" id="note" contenteditable="true">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut rhoncus dui eget tortor feugiat iaculis. Morbi et dolor
-                      in felis viverra efficitur. Integer id laoreet arcu.
-                      Mauris turpis nibh, scelerisque sed tristique non,
-                      hendrerit in erat. Duis interdum nisl risus, ac ultrices
-                      ipsum auctor at. Aliquam faucibus iaculis metus sit amet
-                      tincidunt. Vestibulum cursus urna vel nunc imperdiet
-                      suscipit. Ut eu augue egestas, porta orci lobortis,
-                      pharetra orci. Morbi eu tellus quis nisi tempor accumsan
-                      nec eu urna. empor, ullamcorper tortor. Mauris quis
-                      fermentum augue. Phasellus ac nisl hendrerit, fringilla
-                      enim aliquam, placerat odio. Ut tortor nisi, pellentesque
-                      sed nisi at, hendrerit imperdiet turpis. Proin interdum
-                      porttitor metus at hendrerit. Proin ipsum nisl, lacinia
-                      vitae purus ullamcorper, maximus convallis sem. Sed nec
-                      lacinia lorem. Duis arcu metus, cursus non odio quis,
-                      tincidunt tempor augue. Donec eget vestibulum risus.
-                      Nullam blandit quis est vitae feugiat.
+                      永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修禊事也。群贤毕至，少长咸集。此地有崇山峻岭，茂林修竹；又有清流激湍，映带左右，引以为流觞曲水，列坐其次。虽无丝竹管弦之盛，一觞一咏，亦足以畅叙幽情。是日也，天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目骋怀，足以极视听之娱，信可乐也。
+                      夫人之相与，俯仰一世，或取诸怀抱，悟言一室之内；或因寄所托，放浪形骸之外。虽趣舍万殊，静躁不同，当其欣于所遇，暂得于己，快然自足，曾不知老之将至。及其所之既倦，情随事迁，感慨系之矣。向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀。况修短随化，终期于尽。古人云：“死生亦大矣。”
+                      岂不痛哉！
+                      每览昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。固知一死生为虚诞，齐彭殇为妄作。后之视今，亦犹今之视昔。悲夫！故列叙时人，录其所述，虽世殊事异，所以兴怀，其致一也。后之览者，亦将有感于斯文。
                     </div>
                   </div>
                   <div class="overlay"></div>
@@ -191,7 +181,7 @@
                   style="font-size: 0.9rem; margin-top: 5px;"
                   class="draw-button"
                 >
-                  Draw <small>(Beta)</small>
+                  涂鸦 <small>（测试版）</small>
                 </button>
               </div>
             </div>
@@ -199,22 +189,17 @@
             <div class="customization-col">
               <!-- Handwriting Font -->
               <div style="padding: 5px 0px 5px 0px;">
-                <b>Customizations</b> <small>(Optional)</small>
+                <b>自定义</b>
                 <p style="font-size: 0.8rem;">
-                  <em
-                    >Note: Few changes may reflect only in the generated image
-                    and not in the preview</em
-                  >
+                  注：有些小变动仅在输出文档中才能看出
                 </p>
               </div>
               <fieldset>
-                <legend>Handwriting Options</legend>
+                <legend>手写字体设置</legend>
 
                 <div class="category-grid">
                   <div>
-                    <label class="block" for="handwriting-font"
-                      >Handwriting Font</label
-                    >
+                    <label class="block" for="handwriting-font">选择字体</label>
                     <select id="handwriting-font">
                       <option
                         selected
@@ -243,7 +228,7 @@
                   </div>
                   <div class="upload-handwriting-container">
                     <label class="block" for="font-file"
-                      >Upload your handwriting font <small>(Beta)</small>&nbsp;
+                      >上传字体 <small>（测试）</small>&nbsp;
                       <a
                         style="font-size: 1.1rem;"
                         title="How to add your own handwriting"
